@@ -1,0 +1,128 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+/* Siempre se formatea el body con estos valores */
+}
+h1 {
+    color: blue;
+    
+}
+/* p{
+    color: blueviolet;
+} */
+div{
+    color: chartreuse;
+}
+.dodiv{
+    color: chocolate;
+
+}
+.btn{
+    margin-left: 300px;
+}
+.father{
+    background: orangered;
+    height: 300px;
+    width: 300px;
+    margin: 50px 50px 100px 100px;
+    padding: 100px;
+}
+.hijo{
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    margin: 120px;
+}
+p span{
+    color:blueviolet;
+}
+.container{
+    background-color:darkgrey;
+    display: flex;
+    justify-content: center;;
+    align-items: center;
+    height: 100vh;
+    flex-wrap: wrap;
+    gap: 50px;
+
+
+
+
+}
+.uno{
+     background-color: yellow;
+     height: 400px;
+     width: 400px;
+     border-radius: 15px;
+
+}
+.dos{
+    
+    background-color: blue;
+    height: 400px;
+    width: 400px;
+    border-radius: 15px;
+
+}
+.tres{
+    
+    background-color: red;;
+    height: 400px;
+    width: 400px;
+    border-radius: 15px;
+
+}
+/* teoria index4 */
+.boxcontainer{
+    background-color: aquamarine;
+    height: 400px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+
+}
+.unoo{
+    background-color: olivedrab;
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+
+}
+/* teoria index5 */
+.padre{
+    width: 200px;
+    height: 200px;
+    background-color: brown;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+
+}
+.boy{
+    width: 300px;
+    height: 300px;
+    background-color: aquamarine;
+
+}
+/* teoria index6 */
+.papa{
+    width: 200px;
+    height: 200px;
+    background-color: chocolate;
+    position: relative;
+    left: 200px;
+
+}
+.cachorro{
+     width: 50px;
+     height: 50px;
+     background-color: brown;
+     position: absolute;
+     left: 0;
+     bottom: 0;
+
+}
