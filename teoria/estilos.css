@@ -126,3 +126,18 @@ p span{
      bottom: 0;
 
 }
+.box{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background: red;
+    color: white;
+}
+#uno{
+    position: relative;
+    top:20px;
+    left: 20px;
+    /* bottom: 50px;  Si ya tiene top y left entonces no toma botton*/
+    background: green;
+
+}

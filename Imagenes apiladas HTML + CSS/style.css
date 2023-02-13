@@ -1,0 +1,79 @@
+body{
+    font-family: sans-serif;
+    background-color: rgb(117, 255, 211);
+
+}
+.imagenes-container{
+    /* margin: 100px auto; 
+    width: 500px;  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.imagenes-container .imagenes{
+    margin-right: -12px;
+    display: inline-flex;
+    flex-direction: column-reverse;
+    position: relative;
+}
+.imagenes-container .imagenes img{
+    width: 150px;
+    height: 150px;
+    transition: transform 0.32s ease-in-out;
+}
+.imagenes-container .imagenes .nombre{
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    border-radius: 5px;
+    color: white;
+    display: none;
+    min-width: 100px;
+    width: 150px;
+    /* margin-top: -68px; */
+    top: -70px;
+    /* left: calc(-50% - 30px);  */
+    padding: 10px 15px;
+}
+.imagenes-container .imagenes:hover .nombre{
+    display: flex;
+    transform:translateY(-20px);
+
+}
+.imagenes-container .imagenes .nombre .text{
+    display: inline-block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap; 
+    margin: 0 auto;
+    width: 150px;
+    text-align: center;
+    box-sizing: border-box;
+
+}
+/* Agregar un segundo elemento a el nombre */
+.imagenes-container .imagenes .nombre::before{
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    left: 40%;
+    bottom: -20px;
+    /* background-color: red; */
+
+    border-top: solid 10px black;
+    border-left: solid 10px transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    
+}
+/* Animacion */
+.imagenes-container .imagenes:hover img {
+    transform: translate(-20px);
+}
+@media (max-width: 680px){
+    .imagenes-container{
+        flex-direction: column;
+        height: 180vh;
+    }
+}
