@@ -1,0 +1,79 @@
+:root {
+  --color1: #FAD333;
+  --color2: #FECC00;
+  --color3: white;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* 100% = 16px Default / Conversion 10*16/100= 62.5% */
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: cursive;
+  background-color: var(--color1);
+  background-image: url(../img/fondoTop.jpg), url(../img/fondoTop3.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: center;
+  background-position: right 50vw, bottom 50vh, left 50vw top 50vh;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  background-color: white;
+  width: 328px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
+}
+.card-header {
+  width: 100%;
+  display: block;
+}
+.card-body {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px solid var(--color2);
+}
+.card-body-contentImg {
+  border: 3px solid rgba(213, 80, 80, 0.3);
+  border-radius: 50%;
+  background-color: #FAD333;
+  box-shadow: 0px -10px 20px #FAD333;
+  margin-top: -58px;
+}
+.card-body-contentImg-img {
+  padding: 0px;
+  width: 150px;
+  border-radius: 20%;
+  margin-left: 40px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.card-body-title {
+  margin-top: 2rem;
+  font-size: 3rem;
+}
+.card-body-title span {
+  color: var(--color2);
+}
+.card-footer {
+  display: flex;
+  justify-content: space-around;
+}
+.card-footer-power {
+  text-align: center;
+  margin-bottom: 2rem;
+}/*# sourceMappingURL=style.css.map */
